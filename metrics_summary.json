@@ -1,0 +1,677 @@
+{
+  "dataset_stats": {
+    "total_emails": 800,
+    "phishing_count": 400,
+    "legit_count": 400,
+    "train_samples": 640,
+    "test_samples": 160,
+    "tfidf_vocab_size": 500,
+    "property_feature_count": 14,
+    "timestamp": "2026-10-24 23:08:44"
+  },
+  "benchmarks": [
+    {
+      "features": "TF-IDF Only",
+      "classifier": "Logistic Regression",
+      "accuracy": 0.9625,
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1": 0.961,
+      "auc_roc": 0.9969,
+      "time_sec": 0.006,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          6,
+          74
+        ]
+      ]
+    },
+    {
+      "features": "TF-IDF Only",
+      "classifier": "Linear SVM",
+      "accuracy": 0.9625,
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1": 0.961,
+      "auc_roc": 0.9953,
+      "time_sec": 0.002,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          6,
+          74
+        ]
+      ]
+    },
+    {
+      "features": "TF-IDF Only",
+      "classifier": "Naive Bayes",
+      "accuracy": 0.9688,
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1": 0.9677,
+      "auc_roc": 0.9989,
+      "time_sec": 0.002,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          5,
+          75
+        ]
+      ]
+    },
+    {
+      "features": "Properties Only",
+      "classifier": "Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0,
+      "time_sec": 0.004,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
+    },
+    {
+      "features": "Properties Only",
+      "classifier": "Linear SVM",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0,
+      "time_sec": 0.001,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
+    },
+    {
+      "features": "TF-IDF + Properties",
+      "classifier": "Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0,
+      "time_sec": 0.006,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
+    },
+    {
+      "features": "TF-IDF + Properties",
+      "classifier": "Linear SVM",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0,
+      "time_sec": 0.002,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
+    },
+    {
+      "features": "TF-IDF + Properties",
+      "classifier": "Naive Bayes",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0,
+      "time_sec": 0.001,
+      "confusion_matrix": [
+        [
+          80,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
+    }
+  ],
+  "roc_data": {
+    "TF-IDF Only": {
+      "Logistic Regression": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0125,
+          0.0125,
+          0.025,
+          0.0375,
+          0.0375,
+          0.125,
+          0.125,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.075,
+          0.1,
+          0.1375,
+          0.1625,
+          0.2125,
+          0.275,
+          0.3,
+          0.4625,
+          0.525,
+          0.55,
+          0.6,
+          0.65,
+          0.7375,
+          0.7625,
+          0.925,
+          0.925,
+          0.9375,
+          0.9625,
+          0.9625,
+          0.9875,
+          0.9875,
+          1.0,
+          1.0
+        ],
+        "auc": 0.9968750000000001
+      },
+      "Linear SVM": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0125,
+          0.0125,
+          0.025,
+          0.0375,
+          0.075,
+          0.075,
+          0.225,
+          0.225,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.025,
+          0.05,
+          0.125,
+          0.1625,
+          0.325,
+          0.35,
+          0.3625,
+          0.4125,
+          0.4875,
+          0.55,
+          0.575,
+          0.6,
+          0.6625,
+          0.6875,
+          0.7,
+          0.75,
+          0.9375,
+          0.9375,
+          0.95,
+          0.95,
+          0.975,
+          0.975,
+          0.9875,
+          0.9875,
+          1.0,
+          1.0
+        ],
+        "auc": 0.9953125
+      },
+      "Naive Bayes": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0125,
+          0.0125,
+          0.025,
+          0.025,
+          0.0375,
+          0.0375,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.0625,
+          0.0875,
+          0.1375,
+          0.175,
+          0.2125,
+          0.2375,
+          0.325,
+          0.375,
+          0.4375,
+          0.5,
+          0.55,
+          0.575,
+          0.5875,
+          0.6125,
+          0.675,
+          0.7,
+          0.825,
+          0.85,
+          0.9375,
+          0.9625,
+          0.975,
+          0.975,
+          0.9875,
+          0.9875,
+          1.0,
+          1.0
+        ],
+        "auc": 0.99890625
+      }
+    },
+    "Properties Only": {
+      "Logistic Regression": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0375,
+          0.0875,
+          0.1625,
+          0.1875,
+          0.75,
+          0.85,
+          0.875,
+          0.9125,
+          0.9375,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.0375,
+          0.325,
+          0.35,
+          0.425,
+          0.45,
+          0.4625,
+          0.4875,
+          0.525,
+          0.575,
+          0.7625,
+          0.7875,
+          0.875,
+          0.9,
+          0.95,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "auc": 1.0
+      },
+      "Linear SVM": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0125,
+          0.05,
+          0.0875,
+          0.1625,
+          0.175,
+          0.7375,
+          0.8375,
+          0.8625,
+          0.9,
+          0.925,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.075,
+          0.1,
+          0.3,
+          0.325,
+          0.3625,
+          0.4125,
+          0.5375,
+          0.5625,
+          0.575,
+          0.6,
+          0.8,
+          0.825,
+          0.8625,
+          0.8875,
+          0.9,
+          0.95,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "auc": 1.0
+      }
+    },
+    "TF-IDF + Properties": {
+      "Logistic Regression": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.025,
+          0.05,
+          0.3375,
+          0.3625,
+          0.425,
+          0.45,
+          0.7125,
+          0.7375,
+          0.8125,
+          0.8625,
+          0.8875,
+          1.0,
+          1.0
+        ],
+        "auc": 1.0
+      },
+      "Linear SVM": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0125,
+          0.125,
+          0.15,
+          0.35,
+          0.375,
+          0.5,
+          0.525,
+          0.6875,
+          0.7375,
+          0.8125,
+          0.8625,
+          1.0,
+          1.0
+        ],
+        "auc": 1.0
+      },
+      "Naive Bayes": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.025,
+          0.3,
+          0.325,
+          0.45,
+          0.475,
+          0.4875,
+          0.5125,
+          0.7375,
+          0.7875,
+          0.825,
+          0.85,
+          1.0,
+          1.0
+        ],
+        "auc": 1.0
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "hasHTML",
+      "importance": 3.1005,
+      "is_structural": true
+    },
+    {
+      "feature": "checkdomains",
+      "importance": 2.7864,
+      "is_structural": true
+    },
+    {
+      "feature": "encoding",
+      "importance": 2.5876,
+      "is_structural": true
+    },
+    {
+      "feature": "ndots",
+      "importance": 1.5919,
+      "is_structural": true
+    },
+    {
+      "feature": "badwords",
+      "importance": 1.1922,
+      "is_structural": true
+    },
+    {
+      "feature": "word: your",
+      "importance": 1.0715,
+      "is_structural": false
+    },
+    {
+      "feature": "word: enron",
+      "importance": 0.9081,
+      "is_structural": false
+    },
+    {
+      "feature": "word: account",
+      "importance": 0.6328,
+      "is_structural": false
+    },
+    {
+      "feature": "word: 20",
+      "importance": 0.5883,
+      "is_structural": false
+    },
+    {
+      "feature": "word: ebay",
+      "importance": 0.5756,
+      "is_structural": false
+    },
+    {
+      "feature": "word: to",
+      "importance": 0.5157,
+      "is_structural": false
+    },
+    {
+      "feature": "word: url",
+      "importance": 0.4429,
+      "is_structural": false
+    },
+    {
+      "feature": "word: this",
+      "importance": 0.4225,
+      "is_structural": false
+    },
+    {
+      "feature": "attachments",
+      "importance": 0.4203,
+      "is_structural": true
+    },
+    {
+      "feature": "ipurls",
+      "importance": 0.42,
+      "is_structural": true
+    }
+  ]
+}
